@@ -15,7 +15,7 @@ Framework SDL.GL2SDLMax2D
 Framework BRL.GLMax2D
 ?
 
-Import BRL.Random
+Import BRL.RandomDefault
 
 Import "vectorfont.bmx"
 Import "colordefs.bmx"
@@ -2597,7 +2597,7 @@ Type pu
 		disty# = y-py
 		dist# = (distx * distx + disty * disty)
 		If dist < 20*20 + 16*16
-			PowerUp()
+			Self.PowerUp()
 			die = True
 		EndIf
 
